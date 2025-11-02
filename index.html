@@ -4,39 +4,69 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>lubu0627 · 個人頁</title>
+  <meta name="description" content="嗨，我是蝦淇，一名喜歡 CTF、Python、C++ 的女高中生，這是我的個人自介頁。" />
+  <link rel="icon" href="https://github.com/favicon.ico" type="image/x-icon">
   <style>
     :root { --bg:#0d1117; --fg:#e6edf3; --muted:#9da7b1; --btn:#5865F2; --btn-hover:#4752c4; }
     * { box-sizing: border-box; }
-    body { margin:0; min-height:100dvh; display:grid; place-items:center; background:linear-gradient(160deg,#0d1117 0%,#111827 100%); color:var(--fg); font-family:ui-sans-serif,system-ui,"Microsoft JhengHei",Segoe UI,Roboto,Arial; }
-    .card { width:min(720px,92vw); background:#0f1522cc; border:1px solid #1f2937; border-radius:20px; padding:28px; backdrop-filter: blur(6px); box-shadow:0 10px 30px rgba(0,0,0,.35); }
+    body {
+      margin:0;
+      min-height:100dvh;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(160deg,#0d1117 0%,#111827 100%);
+      color:var(--fg);
+      font-family:ui-sans-serif,system-ui,"Microsoft JhengHei",Segoe UI,Roboto,Arial;
+    }
+    .card {
+      width:min(720px,92vw);
+      background:#0f1522cc;
+      border:1px solid #1f2937;
+      border-radius:20px;
+      padding:28px;
+      backdrop-filter: blur(6px);
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
+    }
     .hero { display:flex; gap:20px; align-items:center; flex-wrap:wrap; }
     .avatar { width:96px; height:96px; border-radius:50%; object-fit:cover; border:2px solid #243043; }
     h1 { margin:0; font-size:28px; }
     p { margin:.4rem 0; color:var(--muted); line-height:1.6; }
     .links { margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
-    .btn { display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none; color:white; background:var(--btn); }
+    .btn {
+      display:inline-block;
+      padding:10px 16px;
+      border-radius:10px;
+      text-decoration:none;
+      color:white;
+      background:var(--btn);
+      transition: background 0.2s;
+    }
     .btn:hover { background:var(--btn-hover); }
     footer { margin-top:16px; font-size:12px; color:#7b8794; text-align:right; }
-    @media (max-width:480px){ .hero{justify-content:center; text-align:center;} footer{text-align:center;} }
+    @media (max-width:480px){
+      .hero{justify-content:center; text-align:center;}
+      footer{text-align:center;}
+    }
   </style>
 </head>
 <body>
   <main class="card">
     <section class="hero">
-      <img class="avatar" src="https://avatars.githubusercontent.com/u/0?v=4" alt="avatar" />
+      <img class="avatar" src="https://avatars.githubusercontent.com/u/139746027?v=4" alt="avatar" />
       <div>
         <h1>嗨，我是 蝦淇 👋</h1>
-        <p>喜歡 CTF／程式開發python,c++，是一位女高生，害羞社恐內向靦腆，只有8%的I，只要是有人的地方，就是我活動值拉滿的地方。這是我的個人自介頁。</p>
+        <p>喜歡 CTF、程式開發（Python、C++），是一位女高生，害羞社恐內向靦腆，只有 8% 的 I。只要是有人的地方，就是我活動值拉滿的地方。這是我的個人自介頁。</p>
         <div class="links">
-          <!-- 將以下連結換成你的 -->
           <a class="btn" href="https://discord.com/users/_lbs.0627" target="_blank" rel="noopener">加我 Discord</a>
           <a class="btn" href="https://github.com/lubu0627" target="_blank" rel="noopener">GitHub</a>
-          <a class="btn" href="https://instagram.com/_lbs.0627" target="blank" rel="noopener"instagram.com</a>
+          <a class="btn" href="https://instagram.com/_lbs.0627" target="_blank" rel="noopener">Instagram</a>
         </div>
       </div>
     </section>
     <footer>© <span id="y"></span> lubu0627 · GitHub Pages</footer>
   </main>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
